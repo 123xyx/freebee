@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人主页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+   <script>
+	   alert(window.screen.width)
+    window.onload = window.onresize = function(){
+        var view_width s= document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640
+		//最大字体（根字体大小） 40
+    }
+   </script>
+</head>
+<body class="body1">
+	<header>
+		<a href="paging-1.html" class="iconfont icon-fanhui"></a><span>@JessA69</span>
+	</header>
+
+	<div class="three_banner">
+		<div class="shang">
+		<img src="img/banner.jpg">
+		<div class="text">
+			<a href="paging-3.html"></a>
+			<p>Jesica Alba</p>
+			<strong class="iconfont icon-dizhi"><i>Los Angeles, CA</i></strong>
+			<p class="p1"><em></em><em class="e1"></em></p>
+		</div><!-- text -->
+		</div><!-- shang -->
+			<div class="xia">
+			<ul>
+				<li>Followers<br><span>4017</span></li>
+				<li>Following<br><span>54</span></li>
+				<li class="li3">Photos<br><span>153</span></li>
+			</ul>
+
+			<div class="iconfont icon-plus-add rit">
+				<span>Follow</span>
+			</div><!-- xia/rit -->
+		</div><!-- xia -->
+	</div><!-- three_banner -->
+
+	<ul class="three_con">
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+		<li><img src="img/three_con.jpg"></li>
+	</ul>
+
+	<div class="three_footer clearfix">
+        <a href="#" class="iconfont icon-shouye"></a>
+        <a href="#" class="iconfont icon-06"></a>
+        <a href="#" class="iconfont icon-xiangji"></a>
+        <a href="#" class="iconfont icon-shoutidai"></a>
+        <a href="#" class="iconfont icon-star"></a>
+    </div>
+</body>
+</html>

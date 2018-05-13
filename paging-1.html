@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+   <script>
+	   alert(window.screen.width)
+    window.onload = window.onresize = function(){
+        var view_width s= document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640
+		//最大字体（根字体大小） 40
+    }
+   </script>
+</head>
+<body class="body1">
+	<div class="iconfont icon-icon- two_top">
+		<p>5</p>
+		<img src="img/logo.png">
+	</div><!-- two_top -->
+
+	<div class="two_banner clearfix">
+		<img src="img/banner.jpg">
+		<div class="con">
+			<a href="paging-2.html" class="a1"><div class="img"></div></a>
+			<p class="p1">Jesica Alba</p>
+			<p class="iconfont icon-dizhi p2"><span>Los Angeles, CA</span></p>
+			<p class="iconfont icon-06 p3"><span>2m</span></p>
+		</div><!-- con -->
+	</div><!-- two_banner -->
+
+	<div class="two_con1 clearfix">
+		<div class="bj">
+			<img src="img/two_con.jpg">
+			<div class="text">
+				<span class="img"></span>
+				<p class="p1">Shawn Corey Carter</p>
+				<p class="iconfont icon-dizhi p2"><span>Brooklyn, NY</span></p>
+			</div><!-- text -->
+
+			<ul>
+				<li class="iconfont icon-xin li1"></li>
+				<li class="iconfont icon-icon-- li2"></li>
+				<li class="iconfont icon-return2fanhuiyou li3"></li>
+				<li class="iconfont icon-more li4"></li>
+			</ul>
+		</div><!-- bj -->
+	</div><!-- two_con1 -->
+
+	<div class="two_con2 clearfix">
+		<img src="img/two_con2.jpg">
+		<div class="con">
+			<div class="img"></div>
+			<p class="p1">Mariah Carey</p>
+			<p class="iconfont icon-dizhi p2"><span>Manhattan, NY</span></p>
+			<p class="iconfont icon-06 p3"><span>19m</span></p>
+		</div><!-- con -->
+	</div><!-- two_con2 -->
+
+	<div class="two_con1 clearfix">
+		<div class="bj">
+			<img src="img/two_con.jpg">
+			<div class="text">
+				<span class="img"></span>
+				<p class="p1">Shawn Corey Carter</p>
+				<p class="iconfont icon-dizhi p2"><span>Brooklyn, NY</span></p>
+			</div><!-- text -->
+
+			<ul>
+				<li class="iconfont icon-xin li1"></li>
+				<li class="iconfont icon-icon-- li2"></li>
+				<li class="iconfont icon-return2fanhuiyou li3"></li>
+				<li class="iconfont icon-more li4"></li>
+			</ul>
+		</div><!-- bj -->
+	</div><!-- two_con1 -->
+
+	<div class="two_con2 clearfix">
+		<img src="img/two_con2.jpg">
+		<div class="con">
+			<div class="img"></div>
+			<p class="p1">Mariah Carey</p>
+			<p class="iconfont icon-dizhi p2"><span>Manhattan, NY</span></p>
+			<p class="iconfont icon-06 p3"><span>19m</span></p>
+		</div><!-- con -->
+	</div><!-- two_con2 -->
+
+	<div class="footer clearfix">
+        <a href="#" class="iconfont icon-shouye show"></a>
+        <a href="#" class="iconfont icon-06"></a>
+        <a href="#" class="iconfont icon-xiangji"></a>
+        <a href="#" class="iconfont icon-shoutidai"></a>
+        <a href="#" class="iconfont icon-star"></a>
+    </div>
+</body>
+</html>

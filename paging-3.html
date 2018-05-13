@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+   <script>
+	   alert(window.screen.width)
+    window.onload = window.onresize = function(){
+        var view_width s= document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640
+		//最大字体（根字体大小） 40
+    }
+   </script>
+</head>
+<body class="body2">
+	<div class="four_top">
+		<div class="sou">
+			 <span class="iconfont icon-suosou"></span>
+		   <input type="text" class="text" placeholder="Search">
+	  </div><!-- sou -->
+	</div><!-- four_top -->
+
+	<div class="four_logo"></div><!-- four_logo -->
+
+	<div class="four_font">
+		<p>Carmen Electra</p>
+		<span class="iconfont icon-dizhi dz"><i>Los Angeles,CA</i></span>
+	</div><!-- four_font -->
+
+	<div class="four_dian clearfix">
+		<p></p>
+		<p class="p1"></p>
+	</div><!-- four_dian -->
+
+	<ul class="four_list">
+		<li class="li1"><span class="iconfont icon-huihua"></span><a href="#">Feed</a></li>
+		<li><span class="iconfont icon-liulanqiduan s2"></span><a href="#">Explore</a><i class="fk">5</i></li>
+		<li><span class="iconfont icon-lianxiren s3"></span><a href="#">Friend</a></li>
+		<li><span class="iconfont icon-rewards s4"></span><a href="#">Rewards</a></li>
+		<li class="li5"><span class="iconfont icon-xinxinicon s5"></span><a href="#">Settings</a></li>
+	</ul>
+</body>
+</html>
